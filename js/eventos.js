@@ -71,3 +71,14 @@ printTareas(listaTareas,sectionTareas);
 selectBuscarPorPrioridad.addEventListener('change', event => {
     printTareas(filterTareasPorPrioridad(listaTareas, event.target.value), sectionTareas);
   })
+
+
+//filterbyword
+
+function recogerBusqueda(event) {
+ 
+    let palabraBuscar = event.target.value.trim();
+    let listaFiltrada = filterTareasPorPalabra(listaTareas, palabraBuscar);
+    printTareas(listaFiltrada, sectionTareas);
+
+}

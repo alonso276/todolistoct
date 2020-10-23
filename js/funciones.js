@@ -28,6 +28,17 @@ function filterTareasPorPrioridad(pListaTareas, pPrioridad) {
   const result = pListaTareas.filter(tarea => tarea.prioridad.toLowerCase() == pPrioridad.toLowerCase());
   return result;
 }
+
+
+  //filterbyword
+  function filterTareasPorPalabra(pListaTareas, pPalabraBuscar) {
+    const filterList = pListaTareas.filter(tarea => {
+        let titulo = tarea.titulo;
+        return titulo.toLowerCase().includes(pPalabraBuscar.toLowerCase());
+    })
+    return filterList;
+}
+
 function eliminarElemento(event) {
   
   event.preventDefault();
