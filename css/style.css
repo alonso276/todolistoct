@@ -1,0 +1,90 @@
+@import url(reset.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em; 
+}
+
+.container{
+    max-width: 600px;
+    margin:10px;
+}
+#introTarea, #introPrioridad{
+    padding:3px;
+    border:3px solid black;
+}
+
+#primerFormulario{
+    background-color: pink;
+    padding:30px;
+    text-align: center;
+}
+.btn-guardar{
+    padding:5px;
+    background-color: rgb(118, 171, 216);
+}
+/** inicio formulario filtros***/
+#formularioFiltros{
+
+  background-color: black;
+   padding-top:10px;
+   padding-bottom:10px;
+   padding-right:90px;
+    text-align: center;
+}
+/** fin  formulario filtros***/
+
+
+/**inicion tareas**/
+#buscador{
+    margin-left:5px;
+}
+
+ #filtroprioridad, #buscador{
+    padding:6px;
+    border:2px solid red;  
+    
+} 
+#filtroprioridad:hover, #buscador:hover{
+    background-color:lightskyblue;
+}
+
+.everytask{
+    display:flex;
+}
+    
+h3{
+padding:20px 40px;
+min-width:468px;
+border: 2px solid black;
+}
+
+ .delete{
+    min-width:50px;
+    padding:22px 40px;
+    text-align:center;
+    background-color:yellow;
+    
+}
+/**fin tareas**/
+/**inicio footer**/
+
+footer{
+    background-color:orange;
+    padding:20px;
+}
+footer p{   
+    font-weight:700;
+}
