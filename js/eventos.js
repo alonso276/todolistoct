@@ -7,6 +7,10 @@ let sectionTareas=document.querySelector('#tareas');
 let selectBuscarPorPrioridad = document.querySelector('#filtroprioridad');
 let buscador = document.querySelector('#buscador');
 
+//Event listeners
+
+btnGuardar.addEventListener('click', recogerDatos);
+buscador.addEventListener('input', recogerBusqueda);
 
 //function print any list
 
@@ -62,17 +66,8 @@ function printTarea(pTarea,pSection){
 
 printTareas(listaTareas,sectionTareas);
 
-function eliminarElemento(event) {
-  
-    event.preventDefault();
-    let inputToRemove = event.target.parentNode;
-    inputToRemove.parentNode.removeChild(inputToRemove);
+//lanzamos evento para filtarporprioridad
 
-    let idBorrar = event.target.dataset.id;
-    
-    let posicion = listaTareas.findIndex(tarea => tarea.id == idBorrar);
-   
-    listaTareas.splice(posicion, 1);
-    
-    
-}
+selectBuscarPorPrioridad.addEventListener('change', event => {
+    printTareas(filterTareasPorPrioridad(listaTareas, event.target.value), sectionTareas);
+  })
