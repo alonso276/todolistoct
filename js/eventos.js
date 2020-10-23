@@ -61,3 +61,18 @@ function printTarea(pTarea,pSection){
 
 
 printTareas(listaTareas,sectionTareas);
+
+function eliminarElemento(event) {
+  
+    event.preventDefault();
+    let inputToRemove = event.target.parentNode;
+    inputToRemove.parentNode.removeChild(inputToRemove);
+
+    let idBorrar = event.target.dataset.id;
+    
+    let posicion = listaTareas.findIndex(tarea => tarea.id == idBorrar);
+   
+    listaTareas.splice(posicion, 1);
+    
+    
+}
