@@ -60,12 +60,27 @@ function printTarea(pTarea,pSection){
     // color="red";
     //  break;
 
-    // }
+    //  }
     
 
 
 printTareas(listaTareas,sectionTareas);
+function recogerDatos (event){
 
+    // event.preventDefault();
+    let inputTarea = selectTarea.value.trim();
+    let inputPrioridad = selectPrioridad.value.trim();
+
+    if (inputTarea != "" && inputPrioridad != "") {
+        addTarea(inputTarea, inputPrioridad);
+
+    } else {
+        alert('Debes rellenar todos los campos!');
+    }
+
+    selectTarea.value = "";
+    selectPrioridad.value = "";
+}
 //lanzamos evento para filtarporprioridad
 
 selectBuscarPorPrioridad.addEventListener('change', event => {
