@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist October</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modelo.js"> </script>
+</head>
+<body>
+
+    
+    <div class="container">
+
+
+    <header>
+        
+        
+    <div id="primerFormulario">
+        
+        <form >
+        <input type="text" id="introTarea" placeholder="Introduce una tarea">
+          
+        <select id="introPrioridad">
+        <option value="" selected>Selecciona una prioridad</option>
+        <option value="diaria">Diaria</option>
+        <option value="mensual">Mensual</option>
+        <option value="urgente">Urgente</option>
+        </select>
+
+        <input id="btn-save" class="btn-guardar" type="submit" value="Guardar">
+        </form>
+    </div>
+
+    <!-- filtro tareas-->
+
+     <div id="formularioFiltros">
+         <form >
+            <select  id="filtroprioridad">
+                <option selected>Selecciona una prioridad</option>
+                <option value="diaria">Diaria</option>
+                <option value="mensual">Mensual</option>
+                <option value="urgente">Urgente</option>
+           </select>
+
+           <input type="text" id="buscador" placeholder="Buscar tarea...">
+        </form>
+     </div>
+    </header>
+    <main>
+        <!--contenido-->
+        <section id="tareas">
+        <!-- <article>
+               <h3>tarea x</h3>
+                <input type="submit" class="delete" value="Eliminar">
+        </article> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>TODO DE LIDIA <i class="fas fa-calendar-day"></i> </p>
+    </footer>
+    
+    <script src="js/funciones.js"></script> 
+    <script src= "js/eventos.js"></script>
+</div>
+</body>
+</html>
