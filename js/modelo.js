@@ -10,16 +10,16 @@ listaTareas= [
         },
         {'idTarea':2,
         'titulo': 'Hacer yoga',
-        'prioridad':'Diaria',
+        'prioridad':'diaria',
        },
        {'idTarea':3,
        'titulo': 'Ir al cine',
-       'prioridad':'Mensual',
+       'prioridad':'mensual',
       },
 
       {'idTarea':4,
       'titulo': 'estudiar inglés',
-      'prioridad':'Diaria'
+      'prioridad':'diaria'
      },
 
 

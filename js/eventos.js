@@ -29,7 +29,7 @@ function printTarea(pTarea,pSection){
     article.classList.add('everytask')
     let h3 = document.createElement('h3');
     h3.classList.add('task')
-    h3.classList.add('prioridad');
+    h3.classList.add(`${pTarea.prioridad}`);
 
     let contenidoh3=  document.createTextNode(`${pTarea.titulo}`);
     h3.appendChild(contenidoh3);
@@ -47,20 +47,7 @@ function printTarea(pTarea,pSection){
     pSection.appendChild(article);
 }
 
-    // let color="";
-
-    //  switch(tarea.prioridad){
-    //  case 'diaria':
-    //  color="green";
-    //    break;
-    //  case 'mensual':
-    //  color="lightblue";
-    //  break;
-    // case 'urgente':
-    // color="red";
-    //  break;
-
-    //  }
+   
     
 
 

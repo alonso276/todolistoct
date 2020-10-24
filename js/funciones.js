@@ -8,7 +8,7 @@ function addTarea(pTarea, pPrioridad) {
     }
 
     let existe = listaTareas.findIndex(tarea => {
-        return tarea.titulo == pTarea && tarea.prioridad == pPrioridad;
+        return tarea.titulo == pTarea &&tarea.prioridad == pPrioridad;
     })
 
     if (existe == -1) {

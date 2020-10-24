@@ -35,6 +35,16 @@ body {
     padding:5px;
     background-color: rgb(118, 171, 216);
 }
+
+ .diaria{
+    background-color:lightgreen;
+}
+ .urgente{ background-color:tomato;}
+
+
+.mensual{
+    background-color: lightsteelblue;
+}
 /** inicio formulario filtros***/
 #formularioFiltros{
 
