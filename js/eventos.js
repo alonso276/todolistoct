@@ -67,7 +67,7 @@ function printTarea(pTarea,pSection){
 printTareas(listaTareas,sectionTareas);
 function recogerDatos (event){
 
-    // event.preventDefault();
+    event.preventDefault();
     let inputTarea = selectTarea.value.trim();
     let inputPrioridad = selectPrioridad.value.trim();
 
