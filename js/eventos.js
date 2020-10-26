@@ -28,7 +28,6 @@ function printTarea(pTarea,pSection){
     let article = document.createElement('article');
     article.classList.add('everytask')
     let h3 = document.createElement('h3');
-    h3.classList.add('task')
     h3.classList.add(`${pTarea.prioridad}`);
 
     let contenidoh3=  document.createTextNode(`${pTarea.titulo}`);
@@ -68,7 +67,7 @@ function recogerDatos (event){
     selectTarea.value = "";
     selectPrioridad.value = "";
 }
-//lanzamos evento para filtarporprioridad
+//event filter by priority
 
 selectBuscarPorPrioridad.addEventListener('change', event => {
     printTareas(filterTareasPorPrioridad(listaTareas, event.target.value), sectionTareas);
